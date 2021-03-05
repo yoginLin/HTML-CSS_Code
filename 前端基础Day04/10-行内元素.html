@@ -1,0 +1,34 @@
+<!-- 
+    行内元素（内联元素）
+    <a>、<strong>、<b>等，其中<span>是最典型的
+    特点：
+    1、一行可以存在多个
+    2、宽、高直接设置无效
+    3、默认宽度就是本身内容的宽度
+    4、行内元素只能容纳文本或其他行内元素
+
+    注意：
+    1、a里面不能放a
+    2、a里面可以放块级元素，但给a转换一下块级元素最安全
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            width: 100px;
+            height: 100px;
+            background-color: hotpink;
+        }
+    </style>
+</head>
+
+<body>
+    <span>pink老师</span> <strong>品如的衣服</strong>
+</body>
+
+</html>

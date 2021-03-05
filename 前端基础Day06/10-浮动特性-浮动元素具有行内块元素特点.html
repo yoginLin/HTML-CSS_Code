@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 任何元素都可以浮动。不管原先是什么模式的元素，添加浮动之后具有行内块元素相似的特性。 */
+        /* 加了浮动之后，span就可以加宽度和高度了 */
+        span,
+        div {
+            float: left;
+            width: 200px;
+            height: 100px;
+            background-color: pink;
+        }
+
+        p {
+            /* 没有给宽度，默认宽度就是浏览器宽度 */
+            float: right;
+            height: 200px;
+            background-color: purple;
+        }
+
+        /* 如果行内元素有了浮动,则不需要转换块级\行内块元素就可以直接给高度和宽度 */
+    </style>
+</head>
+
+<body>
+    <span>1</span>
+    <span>2</span>
+
+    <div>div</div>
+    <p>ppppppp</p>
+</body>
+
+</html>

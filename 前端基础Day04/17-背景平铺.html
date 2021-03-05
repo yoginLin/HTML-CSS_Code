@@ -1,0 +1,39 @@
+<!-- 
+    background-repeat   背景平铺
+    参数：
+        repeat      平铺
+        no-repeat   不平铺
+        repeat-x    沿着x轴平铺
+        repeat-y    沿着y轴平铺
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+            background-image: url('images/logo.png');
+            /* 1、背景图片不平铺 */
+            /* background-repeat: no-repeat; */
+            /* 2、背景图片平铺（默认） */
+            /* background-repeat: repeat; */
+            /* 3、沿x轴平铺 */
+            /* background-repeat: repeat-x; */
+            /* 4、沿y轴平铺 */
+            background-repeat: repeat-y;
+            /* 页面元素既可以添加背景颜色也可以添加背景图片，只不过背景图片会压住背景颜色 */
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- 
+        左手准则
+     -->
+  <style>
+    /* 透视写到父元素身上 */
+    body {
+      perspective: 300px;
+    }
+
+    /* 过渡写在本身上 */
+    img {
+      display: block;
+      margin: 100px auto;
+      transition: all 1s;
+    }
+
+    img:hover {
+      transform: rotateX(360deg);
+    }
+  </style>
+</head>
+
+<body>
+  <img src="images/peiqi.png">
+</body>
+
+</html>

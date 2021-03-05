@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            transition: all .5s;
+        }
+
+        div:hover {
+            /* transform: translate(150px, 150px) rotate(180deg); */
+            /* 顺序不同，结果不同 */
+            /* 先旋转180°，再沿着你原来的角度跑150px */
+            /* transform: rotate(180deg) translate(150px, 150px); */
+            /* 注意，当同时有位移和其他属性的时候，记得将位移放在最前 */
+            transform: translate(150px, 150px) rotate(180deg) scale(1.2);
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

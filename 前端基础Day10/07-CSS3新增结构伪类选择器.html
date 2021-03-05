@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+    结构伪类选择器
+        结构伪类选择器主要根据 文档结构 来选择器元素，常用于根据父级选择器里面的子元素
+
+    选择符                  简介
+    E:first-child           匹配父元素中的第一个子元素E
+    E:last-child            匹配父元素中的最后一个E
+    E:nth-child(n)          匹配父元素中的第n个子元素E
+    E:first-of-type         指定类型E的第一个
+    E:last-of-type          指定类型E的最后一个
+    E:nth-of-type(n)        指定类型E的第n个
+ -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3新增结构伪类选择器</title>
+    <style>
+        /* 1. 选择ul里面的第一个孩子 而且这个孩子必须是 小li */
+        ul li:first-child {
+            background-color: pink;
+        }
+
+        /* 2. 选择ul里面的最后一个孩子 而且这个孩子必须是 小li */
+        ul li:last-child {
+            background-color: pink;
+        }
+
+        /* 3. 选择ul里面的n个孩子 而且这个孩子必须是 小li */
+        /* n 可以是数字，关键字和公式 */
+        ul li:nth-child(5) {
+            background-color: pink;
+        }
+
+        ul li:nth-child(3) {
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>我是第1个孩子</li>
+        <li>我是第2个孩子</li>
+        <li>我是第3个孩子</li>
+        <li>我是第4个孩子</li>
+        <li>我是第5个孩子</li>
+        <li>我是第6个孩子</li>
+        <li>我是第7个孩子</li>
+        <li>我是第8个孩子</li>
+    </ul>
+</body>
+
+</html>

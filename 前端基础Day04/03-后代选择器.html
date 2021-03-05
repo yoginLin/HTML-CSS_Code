@@ -1,0 +1,56 @@
+<!-- 
+    后代选择器
+    格式：
+        元素1 元素2 {
+            ...
+        }
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 我想要把ol里面的小li选出来改成pink */
+        ol li {
+            color: pink;
+        }
+
+        ol li a {
+            color: green;
+            text-decoration: none;
+        }
+
+        .nav li a {
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <ol>
+        变态写法
+        <li>我是ol 的孩子</li>
+        <li>我是ol 的孩子</li>
+        <li>我是ol 的孩子</li>
+        <li><a href="">我是你爸爸</a></li>
+    </ol>
+    <ul>
+        <li>我是ul 的孩子</li>
+        <li>我是ul 的孩子</li>
+        <li>我是ul 的孩子</li>
+    </ul>
+    <ul class="nav">
+        <li>不会变化的</li>
+        <li>不会变化的</li>
+        <li>不会变化的</li>
+        <li><a href="#">会变化的</a></li>
+        <li><a href="#">会变化的</a></li>
+        <li><a href="#">会变化的</a></li>
+        <li><a href="#">会变化的</a></li>
+    </ul>
+</body>
+
+</html>

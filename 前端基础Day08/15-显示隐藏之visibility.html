@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+    这个部分是重点中的重点,后面搭配JS可以做很多的网页特效
+    1、display显示隐藏元素，但是不保留位置
+    2、visibility显示隐藏元素，但是保留原来的位置
+    3、overflow溢出显示隐藏，但是只是对于溢出部分处理
+
+    visibility属性用于指定一个元素应可见还是隐藏
+    visibility: visible;    元素可见
+    visibility: hidden;     元素隐藏    (用的更多,重点)
+
+    visibility隐藏元素后,会继续占有原来的位置
+ -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>显示隐藏之visibility</title>
+    <style>
+        .baba {
+            visibility: visible;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+
+        }
+
+        .mama {
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="baba">猪爸爸</div>
+    <div class="mama">猪妈妈</div>
+</body>
+
+</html>

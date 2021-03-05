@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<!-- 
+    font: 12px/1.5 'Microsoft Yahei';
+    行高可以跟单位，也可以不跟单位
+ -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>行高的继承</title>
+    <style>
+        body {
+            color: pink;
+            font: 12px/1.5 'Microsoft Yahei';
+        }
+
+        div {
+            /* 子元素继承了父元素的行高1.5，就是14 * 1.5 = 21px */
+            font-size: 14px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        /* li虽然没有指定大小，但是会继承父亲指定的大小 所以li的文字大小为12px */
+    </style>
+</head>
+
+<body>
+    <div>粉红色的回忆</div>
+    <p>粉红色的回忆</p>
+    <ul>
+        <li>我没有指定文字大小</li>
+    </ul>
+</body>
+
+</html>

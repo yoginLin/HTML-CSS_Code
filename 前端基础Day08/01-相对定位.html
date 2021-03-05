@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<!--
+    定位：将盒子 定 在某一个 位置，所以 定位也是在摆放盒子，按照定位的方式移动盒子。 
+    定位 = 定位模式 + 边偏移
+
+    1、定位模式
+        定义模式决定元素的定位方式，它通过CSS的position属性来设置，其值可以分为四个：
+        static      静态定位
+        relative    相对定位
+        absolute    绝对定位
+        fixed       固定定位
+    
+    2、边偏移
+     边偏移属性          示例                        描述
+        top           top:80px     顶端偏移量，定义元素相对于其父元素上边线的距离
+       bottom         bottom:80px  底部偏移量，定义元素相对于其父元素下边线的距离
+        left          left:80px    左侧偏移量，定义元素相对于其父元素左边线的距离
+        right         right:80px   右侧偏移量，定义元素相对于其父元素右边线的距离
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>相对定位</title>
+    <style>
+        .box1 {
+            position: relative;
+            top: 100px;
+            left: 100px;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+        
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background-color: deeppink;
+        }
+    </style>
+</head>
+<!-- 
+    1、静态定位（默认定位方式，无定位）
+    选择器：
+        { position:static; }
+    静态定位按照标准流特性摆放位置，它没有边偏移
+    静态定位在布局时很少用到
+
+    2、相对定位（元素在移动时，是相对于它原来的位置来说的）（自恋型）
+        { position:relative; }
+        特点（务必记住）：
+        1）它是相对于自己原来的位置来移动的（移动位置时参照点是自己原来的位置）
+        2）原来在标准流的位置继续占有，后面的盒子仍然以标准流的方式对待它。（不脱标，继续保留原来位置）
+        因此，相对定位并没有脱标。它最典型的应用是给绝对定位当爹的。。。
+
+    3、绝对定位（重要）
+        绝对定位是元素在移动位置的时候，是相对于它祖先元素来说的（拼爹型）
+        语法：{ position:absolute; }
+            特点（绝对记住）：
+            1、如果没有 祖先元素 或者 祖先元素没有定位
+ -->
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+
+</html>

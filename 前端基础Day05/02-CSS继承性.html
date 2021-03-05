@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<!-- 
+2、继承性
+    现实中的继承：我们继承父亲的姓
+    CSS中的继承：字标签会继承父标签中的某些样式，如文本颜色和字号。
+
+    恰当的继承可以简化代码，降低css的复杂性
+    子元素可以继承父元素的样式(text-,font-,line-这些元素开头的可以继承，以及color属性)
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            color: pink;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <!-- 虽然没有给孩子写样式，但是给父亲写了样式，所以孩子可以继承这些样式 -->
+        <p>龙生龙，凤生凤，老鼠生的孩子会打洞</p>
+    </div>
+</body>
+
+</html>

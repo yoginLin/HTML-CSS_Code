@@ -1,0 +1,51 @@
+<!-- <a href="跳转目标" target="目标窗口的弹出方式">文本或图像</a> 
+         属性           作用
+         href       用于指定链接目标的url地址，（必须）
+         target     用于指定链接页面的打开方式，_self是默认值，_blank是在新窗口中打开
+
+    1、外部链接
+        例如<a href="www.baidu.com">百度</a>。
+
+    2、内部链接
+        网站内部的相互链接，直接链接内部页面名称即可，例如<a href="index.html">首页</a>
+        
+    3、空链接
+        如果当时没有确定链接目标时，<a href = "#">首页</a>
+
+    4、下载链接
+        如果href里面地址是一个文件或者压缩包，会下载这个文件。
+
+    5、网页元素链接
+        在网页中的各种元素，如文本、图像、表格、音频、视频等都可以添加超链接。
+
+    6、锚点链接
+        点击链接，快速定位到页面中某个位置。
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h4>1.外部链接</h4>
+    <a href="http://www.qq.com" target="_blank">腾讯</a>
+    <a href="http://www.itcast.com" target="_blank">传智播客</a>
+
+    <h4>2.内部链接</h4>
+    <a href="gongsijianjie.html" target="_blank">公司简介</a>
+
+    <h4>3.空链接</h4>
+    <a href="#">这是一个空链接</a>
+
+    <h4>4.下载链接</h4>
+    <a href="img.zip">这是一个下载链接</a>
+
+    <h4>5.网页元素链接</h4>
+    <a href="http://"><img src="img.jpg" /></a>
+</body>
+
+</html>

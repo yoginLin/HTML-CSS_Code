@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+    1、为什么需要精灵图（有什么用？）
+        一个页面中往往会应用很多小的背景图像作为修饰，当网页中的图像过多时，服务器就会频繁地接收和发送请求图片，造成服务器请求压力过大，这将大大降低页面的加载速度。
+        因此，为了有效地减少服务器接收和发送请求的次数，提高页面的加载速度，出现了CSS精灵技术（也成为CSS Sprites、CSS雪碧）
+    2、精灵图的使用（怎么用？）
+        1、精灵技术主要针对于背景图片使用。就是把多个小背景图片整合到一张大图片中。
+        2、这个大图片也成为sprites 精灵图 或者 雪碧图。
+        3、移动背景图片位置，此时可以使用background-position。
+        4、移动的距离就是这个目标图片的x和y坐标。注意网页中的坐标有所不同。
+        5、因为一般情况下都是往上往左移动，所以数值时负值。
+        6、使用精灵图的时候需要精确测量，每个小背景图片的大小和位置。
+
+        总结：
+        1、精灵图主要针对小的背景图片使用。
+        2、主要借助于背景位置来实现 --- background-position
+        3、一般情况下精灵图都是负值。（千万注意网页中的坐标: x轴右边走时正值，左边走是负值，y轴同理。）
+    3、精灵图课堂案例
+        1、用锁把图层锁起来，防止乱跑
+        2、用切片工具将想要的图片盖起来
+        3、让图片走适当的距离
+ -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>精灵图使用</title>
+    <style>
+        .box1 {
+            width: 60px;
+            height: 60px;
+            margin: 100px auto;
+            background: url(images/sprites.png) no-repeat -182px 0;
+        }
+
+        .box2 {
+            width: 27px;
+            height: 25px;
+            /* background-color: pink; */
+            margin: 200px;
+            background: url(images/sprites.png) no-repeat -155px -106px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+
+</html>

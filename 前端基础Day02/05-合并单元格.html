@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        colspan     跨列合并
+            参数：2 ——> 跨两列
+        rowspan     跨行合并
+            参数：2 ——> 跨两行
+     -->
+    <table border="1" width="500" height="249" cellspacing="0" >
+        <tr>
+            <td> </td>
+            <td colspan="2"> </td>
+            <!-- <td> </td> -->
+            <!-- 这里要把第3个单元格删掉，要不然会很奇怪 -->
+        </tr>
+        <tr>
+            <td rowspan="2"> </td>
+            <td> </td>
+            <td> </td>
+        </tr>
+        <tr>
+            <!-- <td> </td> -->
+            <td> </td>
+            <td> </td>
+        </tr>
+    </table>
+</body>
+</html>

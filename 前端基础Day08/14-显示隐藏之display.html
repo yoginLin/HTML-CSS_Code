@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+    这个部分是重点中的重点,后面搭配JS可以做很多的网页特效
+    1、display显示隐藏元素，但是不保留位置
+    2、visibility显示隐藏元素，但是保留原来的位置
+    3、overflow溢出显示隐藏，但是只是对于溢出部分处理
+ -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>显示隐藏之display</title>
+    <style>
+        /* 本质：让一个元素在页面中隐藏或者显示出来 */
+        .peppa {
+            /* display 隐藏元素后，不再占有原来的位置 */
+            /* 人死了，钱也没了 */
+            /* display: none; */
+
+            /* 改成display: block后隐藏的元素又出现了 */
+            display: block;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        .george {
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="peppa">佩奇</div>
+    <div class="george">乔治</div>
+</body>
+
+</html>

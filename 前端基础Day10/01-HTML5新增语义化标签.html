@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+    html5 新增了哪些新特性呢？
+        新标签、新表单、新表单属性
+    但是这些新特性有兼容性问题，IE9+以上版本浏览器才支持
+
+    声明：新特性增加很多，但是我们专注于开发常用的新特性
+
+    以前布局，基本用div来做。但div对于搜索引擎来说，是没有语义的。
+        <header>：头部标签
+        <nav>：导航标签
+        <article>：内容标签
+        <section>：定义文档某个区域
+        <aside>：侧边栏标签
+        <footer>：尾部标签
+
+    注意：
+        1、这种语义化是针对 搜索引擎 的
+        2、这些新标签页面中可以使用 多次
+        3、在IE9中，需要把这些元素转换为 块级元素
+        4、其实，我们移动端更喜欢使用这些标签
+        5、HTML5还增加了很多其他标签，我们后面再慢慢学
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5新增语义化标签</title>
+    <style>
+        header {
+            height: 120px;
+            background-color: pink;
+            border-radius: 15px;
+            width: 800px;
+            margin: 15px auto;
+        }
+
+        header,
+        nav {
+            height: 120px;
+            background-color: pink;
+            border-radius: 15px;
+            width: 800px;
+            margin: 15px auto;
+        }
+
+        section {
+            width: 500px;
+            height: 300px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <header>头部标签</header>
+    <nav>导航栏标签</nav>
+    <section>某个区域</section>
+</body>
+
+</html>

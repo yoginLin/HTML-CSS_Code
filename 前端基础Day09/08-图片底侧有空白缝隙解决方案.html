@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+    解决方案：
+        1、给图片添加 vertical-align: middle | top | bottom 等（提倡）;
+        2、把图片转换为块级元素 display:block;
+ -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片底侧空白缝隙解决方案</title>
+    <style>
+        div {
+            border: 2px solid red;
+        }
+
+        img {
+            /* vertical-align: bottom; */
+            /* vertical-align: middle; */
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <!-- 
+            因为图片默认和文字的基线对齐，不是底线，所有会漏出来
+            只要保证我们的文字不和 基线 对齐，就不会有空白缝隙了
+         -->
+        <img src="images/ldh.jpg" alt="">
+    </div>
+</body>
+
+</html>

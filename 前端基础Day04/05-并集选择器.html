@@ -1,0 +1,46 @@
+<!-- 并集选择器
+    并集选择器（逗号可以理解为 和 ，元素1 和 元素2 都改了
+    元素1,
+    元素2 {
+        样式声明
+    }  
+    主要作用：选择多组标签
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 要求1：请把熊大和熊二改成粉色 */
+        /* div,
+        p {
+            color: pink;
+        } */
+
+        /* 要求2：请把熊大和熊二改成粉色 还有 小猪一家改成粉色 */
+        div,
+        p,
+        ul li {
+            color: pink;
+        }
+
+        /* 约定的语法规范，我们并集选择器喜欢竖着写 */
+        /* 一定要注意，最后一个选择器 不需要加逗号 */
+    </style>
+</head>
+
+<body>
+    <div>熊大</div>
+    <p>熊二</p>
+    <span>光头强</span>
+    <ul class="pig">
+        <li>小猪佩奇</li>
+        <li>猪爸爸</li>
+        <li>猪妈妈</li>
+    </ul>
+</body>
+
+</html>

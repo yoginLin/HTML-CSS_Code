@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+    box-shadow: h-shadow v-shadow blur spread color inset;
+    h-shadow：必须。水平阴影的位置。允许负值。
+    v-shadow：必须。垂直阴影的位置。允许负值。
+    blur：可选。模糊距离。
+    spread：可选。阴影的尺寸。
+    color：可选。阴影的颜色。请参阅CSS颜色值。
+    inset：可选。将外部阴影（outset）改为内部阴影。
+
+    注意：
+    1、默认是外阴影（outset），但是不可以写这个单词，否则阴影无效
+    2、盒子阴影不占空间，不会影响其他盒子排列
+ -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子阴影</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin: 100px auto;
+        }
+
+        /* 原先盒子没有阴影，鼠标经过盒子就添加阴影效果 */
+        div:hover {
+            box-shadow: 10px 10px 10px -4px rgba(0, 0, 0, .3);
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

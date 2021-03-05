@@ -1,0 +1,44 @@
+<!-- 
+    a:link          选择所有未被访问的链接
+    a:visited       选择所有已被访问的链接
+    a:hover         选择鼠标指针位于其上的链接
+    a:active        选择活动链接（鼠标按下未弹起的链接）
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>复合选择器之链接伪类选择器</title>
+    <style>
+        /* 未访问过的链接 */
+        a:link {
+            color: #333;
+            text-decoration: none;
+        }
+
+        /* 点击过的 */
+        a:visited {
+            color: rgb(255, 166, 0);
+        }
+
+        /* 鼠标选中的 */
+        a:hover {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        /* 当前点中的 */
+        a:active {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#">小猪佩奇</a>
+    <a href="http://www.xxxxx.com">未知的网站</a>
+</body>
+
+</html>

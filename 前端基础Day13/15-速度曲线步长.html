@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+    值              描述
+    linear          动画从头到尾的速度是相同的。匀速
+    ease            默认。动画以低速开始，然后加快，在结束前变慢
+    ease-in         动画以低速开始
+    ease-out        动画以低速结束
+    ease-in-out     动画以低速开始和结束
+    steps()         指定了时间函数中的间隔数量（步长）
+ -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            overflow: hidden;
+            width: 0;
+            height: 30px;
+            background-color: pink;
+            /* 让我们的文字强制一行显示 */
+            white-space: nowrap;
+            /* steps 就是分几步来完成我们的动画 有了steps 就不要再写 ease 或 linear 了 */
+            animation: w 4s steps(10) forwards;
+            font-size: 20px;
+        }
+
+        @keyframes w {
+            0% {
+                width: 0;
+            }
+
+            100% {
+                width: 200px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>世纪佳缘我在这里等你</div>
+</body>
+
+</html>

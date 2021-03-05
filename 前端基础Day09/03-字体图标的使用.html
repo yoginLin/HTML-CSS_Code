@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+    字体图标使用场景：主要是用于显示网页中通用、常用的一些小图标。
+    精灵图是有诸多优点的，但是缺点很明显。
+        1、图片文件较大
+        2、图片本身放大和缩小会失真
+        3、一旦图片制作完毕想要更换非常复杂。
+
+    此时，有一种技术的出现很好的解决了以上问题，就是 字体图标iconfont。
+    字体图标 可以为前端工程师提供一种方便高效的图标使用方式，展示的是图标，本质属于字体。
+
+    字体图标的优点：
+        轻量级：一个图标字体要比一系列的图像要小。一旦字体加载了，图标就会马上渲染出来，减少了服务器请求
+        灵活性：本质其实是文字，可以很随意的改变颜色、产生阴影、透明效果、旋转等
+        兼容性：几乎支持所有的浏览器，请放心使用
+        注意：字体图标不能替代精灵技术，只是对工作中的图标部分技术的提升和优化。
+
+        总结：
+            1、如果遇到一些结构和样式比较简单的小图标，就用字体图标。
+            2、如果遇到一些结构和样式复杂一点的小图片，就用精灵图。
+
+    字体图标下载
+        推荐下载网站：
+            icomoon字库 http://icomoon.io              推荐指数 ☆☆☆☆☆
+                优点：种类繁多、非常全面
+                缺点：国外服务器，打开速度慢
+            阿里iconfont字库 http://www.iconfont.cn     推荐指数 ☆☆☆☆☆
+                优点：免费
+    字体图标引入
+        下载完成后，注意原先的文件不要删，后面会用
+            1、把下载包里面的fonts文件夹放入页面根目录下
+            2、在CSS样式中全局声明字体：简单理解把这些字体文件通过CSS引入到我们的页面中
+    字体图标追加
+        如果工作中原来的字体图标不够用了，就需要添加新的字体图标到原来的字体文件中。
+        把压缩包里面的 selection.json 从新上传，然后选中自己想要新的图标，重新下载压缩包，替换原来文件即可
+ -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>字体图标的使用</title>
+    <style>
+        /* 字体声明 */
+        @font-face {
+            font-family: 'icomoon';
+            src: url('fonts/icomoon.eot?p4ssmb');
+            src: url('fonts/icomoon.eot?p4ssmb#iefix') format('embedded-opentype'),
+                url('fonts/icomoon.ttf?p4ssmb') format('truetype'),
+                url('fonts/icomoon.woff?p4ssmb') format('woff'),
+                url('fonts/icomoon.svg?p4ssmb#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        span {
+            font-family: 'icomoon';
+            font-size: 100px;
+            color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <span></span>
+    <span></span>
+</body>
+
+</html>
